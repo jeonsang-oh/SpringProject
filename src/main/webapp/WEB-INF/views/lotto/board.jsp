@@ -30,7 +30,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>  
 
 
-$('#getNumber').on("click", function() {
+$('#getNumber').on("click", function() { 
 	rootUrl = "http://localhost:8080/"
 	
 	$.ajax({
