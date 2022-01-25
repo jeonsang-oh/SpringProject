@@ -10,12 +10,12 @@
   </select>
   
   <select id="selectNumberList" parameterType="com.spring.lotto.model.BoardVO"  resultType="hashMap">
-    	SELECT MIN(DECODE(MOD(ROWNUM - 1, 6) + 1, 1, num)) AS NO1,
-		       MIN(DECODE(MOD(ROWNUM - 1, 6) + 1, 2, num)) AS NO2,
-		       MIN(DECODE(MOD(ROWNUM - 1, 6) + 1, 3, num)) AS NO3,
-		       MIN(DECODE(MOD(ROWNUM - 1, 6) + 1, 4, num)) AS NO4,
-		       MIN(DECODE(MOD(ROWNUM - 1, 6) + 1, 5, num)) AS NO5,
-		       MIN(DECODE(MOD(ROWNUM - 1, 6) + 1, 6, num)) AS NO6
+    	SELECT MIN(DECODE(MOD(ROWNUM - 1, 6) + 1, 1, NUM)) AS NO1,
+		       MIN(DECODE(MOD(ROWNUM - 1, 6) + 1, 2, NUM)) AS NO2,
+		       MIN(DECODE(MOD(ROWNUM - 1, 6) + 1, 3, NUM)) AS NO3,
+		       MIN(DECODE(MOD(ROWNUM - 1, 6) + 1, 4, NUM)) AS NO4,
+		       MIN(DECODE(MOD(ROWNUM - 1, 6) + 1, 5, NUM)) AS NO5,
+		       MIN(DECODE(MOD(ROWNUM - 1, 6) + 1, 6, NUM)) AS NO6
 		FROM (
 		        SELECT GRP
 		       		  ,NUM
