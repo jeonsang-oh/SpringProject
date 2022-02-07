@@ -23,6 +23,8 @@ public class BoardController {
 	
 	@RequestMapping(value="/board", method = RequestMethod.GET)
 	public ModelAndView Board() throws Exception {
+		System.out.println(boardService.getDate());
+		
 		return new ModelAndView("lotto/board");
 	}
 	

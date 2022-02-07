@@ -12,7 +12,7 @@ import com.spring.lotto.model.BoardVO;
 @Repository
 public class BoardDaoImpl implements BoardDao {
 	
-	@Autowired //servlet-context.xml에서 선언한 SqlSession 주입
+	@Autowired 
 	private SqlSession sqlSession; 
 	
 	private static final String NAMESPACE = "com.spring.lotto.dao.BoardDao.";
